@@ -1,0 +1,100 @@
+.main-header {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    padding:  $basePadding $basePadding;
+    font-family: 'Kreon', serif;
+    background-color: rgba($backgroundColor, .85);
+    @media (max-width: $mobile) {
+        padding: ($basePadding / 2) $basePadding;
+    }
+    &__heading {
+        font-size: 1.75em;
+        line-height: 1em;
+        @media (max-width: $mobile) {
+            font-size: 1.25em;
+        }
+    }
+    &__nav {
+        &__heading {
+            z-index: 2;
+            font-size: 1.75em;
+            position: relative;
+            @media (max-width: $mobile) {
+                font-size: 1.5em;
+            }
+            &__action {
+                display: inline-block;
+                margin-right: .5em;
+                transition: $fastTransition;
+                transition-delay: $duration;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        &__container {
+            top: 0;
+            right: 0;
+            position: absolute;
+            z-index: 4;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(black, .75);
+            transition: $fastTransition;
+        }
+        &__list {
+            overflow: auto;
+            max-height: 42vh;
+            min-height: 25vh;
+            &__heading {
+                font-size: 1.75em;
+                margin: $basePadding;
+                padding: $basePadding;
+                min-width: 4em;
+                text-align: center;
+                @media (max-width: $mobile) {
+                    margin: ($basePadding / 2);
+                    padding: ($basePadding / 2);
+                }
+                border-bottom: 1px dashed $white;
+                font-weight: 700;
+                &:last-child {
+                    color: $red;
+                    border-top: 1px dashed $white;
+                    border-bottom: 0;
+                }
+            }
+            &__item {
+                text-align: center;
+            }
+            &--button {
+                display: inline-block;
+                padding: ($basePadding / 1.4);
+                font-size: 1.4em;
+                &:hover {
+                    cursor: pointer;
+                    color: $lime;
+                }
+                &:focus {
+                    outline: none;
+                    color: $lime;
+                }
+            }
+        }
+    }
+}
+
+#go-head.show-control:checked + .main-header {
+    background-color: transparent;
+    .main-header__nav .main-header__nav__heading .main-header__nav__heading__action:nth-child(1) {
+        transform: translateY(-200%);
+    }
+}
+
+
+
+
+

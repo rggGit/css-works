@@ -1,0 +1,80 @@
+@charset 'utf-8';
+@import 'compass/reset';
+
+@import 'font';
+@import 'variables';
+@import 'flexy-behavior';
+
+@import 'components/show-control';
+@import 'components/toggle';
+
+@import 'components/main-header';
+@import 'components/main-section';
+@import 'components/featured';
+@import 'components/related-article';
+@import 'components/code-switcher';
+
+.bg-pattern {
+    background-image:   linear-gradient(45deg, transparent 39.5%, rgba($lime, .07) 40%, transparent 40.5%, transparent 45.5%, rgba($cyan, .025) 46%, rgba($cyan, .025) 49%, rgba($backgroundColor, .025) 50%, rgba($cyan, .025) 51%, rgba($cyan, .025) 55%, transparent 55.5%, transparent 59.5%, rgba($lime, .07) 60%, transparent 60.5%),
+                        linear-gradient(-45deg, transparent 39.5%, rgba($lime, .07) 40%, transparent 40.5%, transparent 45.5%, rgba($cyan, .025) 46%, rgba($cyan, .025) 49%, rgba($backgroundColor, .025) 50%, rgba($cyan, .025) 51%, rgba($cyan, .025) 55%, transparent 55.5%, transparent 59.5%, rgba($lime, .07) 60%, transparent 60.5%),
+                        radial-gradient(center 50%, transparent 81.5%, rgba($lime, .025) 82%);
+    background-size:    9em 9em;
+    background-repeat: repeat;
+    background-position: top center;
+    @media (max-width: $tablet) {
+        background-size: 8em 8em;
+    }
+    @media (max-width: $mobile) {
+        background-size: 7em 7em;
+    }
+}
+
+.shaded
+{
+    filter: drop-shadow(0 .2em .06em rgba(black, .75));
+}
+
+html,
+body,
+main {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $backgroundColor;
+    color: $mainColor;
+}
+
+.mask {
+    width: 100vw;
+    -webkit-overflow-scrolling: touch;
+}
+
+.regular-padding {
+    padding: $basePadding ($basePadding * 1.5);
+    @media (max-width: $mobile) {
+        padding: $basePadding;
+    }
+}
+
+.svg-icon {
+    width: 1em;
+    height: 1em;
+    stroke: $mainColor;
+    &--ok {
+        stroke: none;
+        fill: $mainColor;
+    }
+    &--ko {
+        stroke: none;
+        opacity: .2;
+        fill: $backgroundColor;
+    }
+    &__sprite
+    {
+        display: none;
+    }
+}

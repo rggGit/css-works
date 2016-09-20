@@ -1,0 +1,55 @@
+/* COLORS */
+$mainColor: #f0f0f0;
+$baseColor: #273339;
+$backgroundColor: #222b30;
+$white: $mainColor;
+$cyan: adjust-hue(cyan, 15deg);
+$red: darken(adjust-hue(magenta, 40deg), 5);
+$lime: darken(adjust-hue(lime, 40deg), 5);
+$yellow: #E6A500;
+
+$colorList:(
+    'backgroundColor'   : $backgroundColor,
+    'baseColor'         : $baseColor,
+    'white'             : $white,
+    'red'               : $red,
+    'cyan'              : $cyan,
+    'yellow'            : $yellow,
+    'lim'               : $lime
+);
+
+
+
+/* ACELERATIONS */
+$bezier: cubic-bezier(0.54,-0.24, 0.46, 1.28);
+
+
+
+/* TIMING */
+$duration: .3s;
+$slowDuration: $duration * 3;
+
+
+
+/* SIZES */
+$lineHeight: 1.4em;
+$basePadding: $lineHeight;
+
+$desktop: 118.750em;
+$tablet: 80em;
+$mobile: 48.000em;
+
+$radius: .5em;
+
+$spacesArray: (
+    'small' : $lineHeight * .5,
+    'normal': $lineHeight,
+    'medium': $lineHeight * 2,
+    'big'   : $lineHeight * 3,
+    'huge'  : $lineHeight * 4
+);
+
+
+$transition: transform ($duration * 2) ease-in-out;
+$fastTransition: transform $duration ease-in-out;
+$transitionAll: all ($duration * 2) ease-in-out;

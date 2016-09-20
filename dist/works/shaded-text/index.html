@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <title>Shaded Text</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Shaded Text, a SVG+CSS3 experiment about animated shadows by RGG">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <link rel="stylesheet" type="text/css" media="all" href="css/main.css">
+</head>
+
+<body ontouchstart="">
+    <main class="main">
+        <svg width="1.5em" height="0.7em" xmlns="http://www.w3.org/2000/svg" class="svg-text">
+            <defs>
+                <filter id="drop-stroke-shadow">
+                    <feGaussianBlur in="SourceAlpha" stdDeviation="10"></feGaussianBlur>
+                </filter>
+                <symbol id="stroke">
+                    <text x="50%" y="67%" fill="none" stroke-width=".035em" stroke-linecap="round" stroke-linejoin="round" paint-order="stroke fill" text-anchor="middle">Shaded</text>
+                </symbol>
+                <symbol id="fill">
+                    <text x="50%" y="60%" text-anchor="middle">Shaded</text>
+                </symbol>
+            </defs>
+            <g stroke="#00cccc" class="svg-text__shaded__stroke">
+                <use y="5%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stroke" opacity="0.5" filter="url(#drop-stroke-shadow)"></use>
+                <use y="3%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stroke"></use>
+                <use y="2%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stroke"></use>
+                <use y="1%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stroke"></use>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#stroke" stroke="cyan"></use>
+            </g>
+            <g fill="#e6e6e6">
+                <use y="7%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fill" class="svg-text__shaded"></use>
+                <use y="6.5%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fill"></use>
+                <use y="6%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fill"></use>
+                <use y="5.5%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fill"></use>
+                <use y="5%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fill"></use>
+                <use y="4.5%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fill"></use>
+                <use y="4%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fill"></use>
+                <use y="3.5%" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#fill" fill="white"></use>
+            </g>
+        </svg>
+    </main>
+</body>
+
+</html>

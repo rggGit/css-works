@@ -1,0 +1,378 @@
+include ../mixins/mixins
+
+
+doctype html
+html(lang='es-ES')
+    head
+        title CSS Works
+
+        meta(charset='utf-8')
+        meta(name='description', content='Title, short description.')
+        meta(content='IE=edge', http-equiv='X-UA-Compatible')
+        //- meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable = no')
+
+        link(rel='stylesheet' type='text/css' media='all' href='css/main.css')
+
+    body
+        include ../icons
+        +layout(
+            [
+                {
+                    header: {
+                        title       : ['CSS','Works'],
+                        description : 'Out of my mind...'
+                    }
+                },
+                {
+                    header: {
+                        title       : ['3D','Render'],
+                        description : 'Experimenting with CSS shadows...'
+                    },
+                    articles: [
+                        {
+                            title       : 'A first look.',
+                            description : 'How it works...',
+                            example     : {
+                                text    : [
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...'
+                                ],
+                                work    : './works/3d-render',
+                                support : {
+                                    'chrome'    : true,
+                                    'safari'    : true,
+                                    'firefox'   : true,
+                                    'edge'      : true
+                                }
+                            }
+                        },
+                        {
+                            title       : 'A first look.',
+                            description : 'How it works...',
+                            example     : {
+                                text    : [
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...'
+                                ],
+                                work    : './works/3d-render',
+                                support : {
+                                    'chrome'    : true,
+                                    'safari'    : true,
+                                    'firefox'   : true,
+                                    'edge'      : true
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    header: {
+                        title       : ['SVG','Icons'],
+                        description : 'SVG Icons for microinteracions...'
+                    },
+                    articles: [
+                        {
+                            title       : 'A first look.',
+                            description : 'How it works...',
+                            example     : {
+                                text    : [
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...'
+                                ],
+                                work    : './works/svg-icons',
+                                support : {
+                                    'chrome'    : true,
+                                    'safari'    : true,
+                                    'firefox'   : true,
+                                    'edge'      : false
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    header: {
+                        title       : ['Shaded','Text'],
+                        description : 'A SVG+CSS shadows experiment...'
+                    },
+                    articles: [
+                        {
+                            title       : 'A first look.',
+                            description : 'How it works...',
+                            example     : {
+                                text    : [
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...'
+                                ],
+                                work    : './works/shaded-text',
+                                support : {
+                                    'chrome'    : true,
+                                    'safari'    : true,
+                                    'firefox'   : true,
+                                    'edge'      : false
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    header: {
+                        title       : ['Pure','Tree'],
+                        description : 'A folders tree view without JS...'
+                    },
+                    articles: [
+                        {
+                            title       : 'Check out this hand crafted SVG.',
+                            description : 'An example of what can be done just coding SVG',
+                            example     : {
+                                text    : [
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...'
+                                ],
+                                work    : './works/pure-tree',
+                                support : {
+                                    'chrome'    : true,
+                                    'safari'    : true,
+                                    'firefox'   : true,
+                                    'edge'      : true
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    header: {
+                        title       : ['Pure','Steps'],
+                        description : 'A sassy "Step By Step" process...'
+                    },
+                    articles: [
+                        {
+                            title       : 'A short feature or some tip.',
+                            description : 'A quick feature\'s description...',
+                            example     : {
+                                text    : [
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...'
+                                ],
+                                work    : './works/pure-steps',
+                                support : {
+                                    'chrome'    : true,
+                                    'safari'    : true,
+                                    'firefox'   : true,
+                                    'edge'      : true
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    header: {
+                        title       : ['Pure','Icons'],
+                        description : 'Just playing :P'
+                    },
+                    articles: [
+                        {
+                            title       : 'A short feature or some tip.',
+                            description : 'A quick feature\'s description...',
+                            example     : {
+                                text    : [
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...'
+                                ],
+                                work    : './works/pure-icons',
+                                support : {
+                                    'chrome'    : true,
+                                    'safari'    : true,
+                                    'firefox'   : true,
+                                    'edge'      : true
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    header: {
+                        title       : ['Pure','Moonwalk'],
+                        description : 'Just for laughts...'
+                    },
+                    articles: [
+                        {
+                            title       : 'A short feature or some tip.',
+                            description : 'A quick feature\'s description...',
+                            example     : {
+                                text    : [
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...'
+                                ],
+                                work    : './works/pure-moonwalk',
+                                support : {
+                                    'chrome'    : true,
+                                    'safari'    : true,
+                                    'firefox'   : true,
+                                    'edge'      : true
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    header: {
+                        title       : ['Pure','Pyramid'],
+                        description : 'A light & shadows exercise...'
+                    },
+                    articles: [
+                        {
+                            title       : 'A short feature or some tip.',
+                            description : 'A quick feature\'s description...',
+                            example     : {
+                                text    : [
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...'
+                                ],
+                                work    : './works/pure-pyramid',
+                                support : {
+                                    'chrome'    : true,
+                                    'safari'    : true,
+                                    'firefox'   : true,
+                                    'edge'      : true
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    header: {
+                        title       : ['Envelope','Icon'],
+                        description : 'A pure CSS icon...'
+                    },
+                    articles: [
+                        {
+                            title       : 'A short feature or some tip.',
+                            description : 'A quick feature\'s description...',
+                            example     : {
+                                text    : [
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...'
+                                ],
+                                work    : './works/envelope-icon',
+                                support : {
+                                    'chrome'    : true,
+                                    'safari'    : true,
+                                    'firefox'   : true,
+                                    'edge'      : true
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    header: {
+                        title       : ['Pure','Bars'],
+                        description : 'A growing bars chart...'
+                    },
+                    articles: [
+                        {
+                            title       : 'A short feature or some tip.',
+                            description : 'A quick feature\'s description...',
+                            example     : {
+                                text    : [
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...'
+                                ],
+                                work    : './works/pure-bars',
+                                support : {
+                                    'chrome'    : true,
+                                    'safari'    : true,
+                                    'firefox'   : true,
+                                    'edge'      : true
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    header: {
+                        title       : ['Pure','Progress'],
+                        description : 'A pretty & liquid progress bar...'
+                    },
+                    articles: [
+                        {
+                            title       : 'A short feature or some tip.',
+                            description : 'A quick feature\'s description...',
+                            example     : {
+                                text    : [
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...'
+                                ],
+                                work    : './works/pure-progress',
+                                support : {
+                                    'chrome'    : true,
+                                    'safari'    : true,
+                                    'firefox'   : true,
+                                    'edge'      : true
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    header: {
+                        title       : ['Pure','Toggles'],
+                        description : 'Some animations for toogles...'
+                    },
+                    articles: [
+                        {
+                            title       : 'A short feature or some tip.',
+                            description : 'A quick feature\'s description...',
+                            example     : {
+                                text    : [
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...',
+                                    'A detailed description & code snippets...'
+                                ],
+                                work    : './works/pure-toggles',
+                                support : {
+                                    'chrome'    : true,
+                                    'safari'    : true,
+                                    'firefox'   : true,
+                                    'edge'      : true
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        )
+
+        script(type='text/javascript' src='js/actions.js')
+
+
+
+
+
+
