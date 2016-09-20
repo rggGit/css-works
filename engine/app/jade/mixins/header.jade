@@ -1,0 +1,13 @@
+mixin header(params, link, isIntro)
+    header.featured.bg-pattern.flexy__item.flexy--column.flexy--justify-center.flexy--items-center
+        h2.featured__heading #{params.title[0]}
+            strong #{params.title[1]}
+        p.featured__description #{params.description}
+        if !isIntro
+            label(for='#{link}')
+                svg.svg-icon.featured__icon
+                    g(stroke-width='.025em' fill='none')
+                        circle(cx='0.5em' cy='0.5em' r='0.48em')
+                        //- line(x1='0.5em' y1='0.2em' x2='0.5em' y2='.8em')
+                        line(x1='0.25em' y1='0.4em' x2='0.5em' y2='.65em')
+                        line(x1='0.75em' y1='0.4em' x2='0.5em' y2='.65em')

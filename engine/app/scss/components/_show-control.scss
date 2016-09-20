@@ -1,0 +1,9 @@
+.show-control {
+    display: none;
+    &__content {
+        transform: translateX(100%);
+    }
+    &:checked + .show-control__content {
+        transform: translateX(0);
+    }
+}
