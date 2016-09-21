@@ -13,7 +13,7 @@ mixin article(params, link)
                                 each elem in item.example.text
                                     p #{elem}
                         .code-switcher__item__content.flexy__child.flexy__item
-                            object.code-switcher__item__content__object.flexy__child(name='foo' type='text/html' data='')
+                            iframe.code-switcher__item__content__object.flexy__child(name='foo' type='text/html' src='' width='100%' hright='100%')
                             //- iframe.flexy__child(src='#{item.example.work}' width='100%')
                 .code-switcher__actions.flexy__item.flexy--between
                     if item.example.support
